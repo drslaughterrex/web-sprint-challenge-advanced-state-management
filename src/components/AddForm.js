@@ -70,15 +70,9 @@ const AddForm = (props) => {
             id="description"
           />
         </div>
-        {props.errorMessage && (
-          <div
-            data-testid="errorAlert"
-            className="alert alert-danger"
-            role="alert"
-          >
-            Error: {errorMessage}
-          </div>
-        )}
+        {props.errorMessage && <div data-testid="errorAlert" className="alert alert-danger" role="alert">Error: {props.errorMessage}</div>
+        
+        }
         <button>Submit Smurf</button>
       </form>
     </section>
